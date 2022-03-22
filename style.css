@@ -29,14 +29,39 @@ header {
     padding: 10px;
     position: fixed;
     top: 0;
+    background-color: var(--background-color);
 }
 
-.logo > img {
+.logo {
     width: 350px;
+    height: auto;
+    padding: 10px;
 }
 
 .main-nav {
     text-align: left;
     padding: 10px;
     background-color: var(--secondary-color);
+    transform: scale(1, 0);
+    position: absolute;
 }
+
+.hamburger-anchor {
+    display: none;
+}
+
+.hamburger-anchor:checked ~ .main-nav {
+    transform: scale(1, 1);
+}
+
+.hamburger-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid red;
+    margin-left: 1.5em;
+    height: 100%; 
+    display: flex;
+    align-items: center;
+}
+
