@@ -38,13 +38,6 @@ header {
     padding: 10px;
 }
 
-.main-nav {
-    text-align: left;
-    padding: 10px;
-    background-color: var(--secondary-color);
-    transform: scale(1, 0);
-    position: absolute;
-}
 
 .hamburger-anchor {
     display: none;
@@ -58,10 +51,17 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    border: 1px solid red;
     margin-left: 1.5em;
     height: 100%; 
     display: flex;
     align-items: center;
 }
 
+.main-nav {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    transform: scale(1, 0);
+    position: absolute;
+}
