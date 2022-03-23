@@ -87,6 +87,7 @@ header {
     transform-origin: top;
     transition: transform 300ms ease-in-out;
 }
+
 /* used to toggle for hamburger menu */
 .hamburger-anchor:checked ~ .main-nav {
     transform: scale(1, 1);
