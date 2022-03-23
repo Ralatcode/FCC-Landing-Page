@@ -51,7 +51,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 1.5em;
+    margin-left: 1em;
     height: 100%; 
     display: flex;
     align-items: center;
@@ -80,10 +80,24 @@ header {
 }
 
 .main-nav {
+    position: absolute;
+    left: 0;
     width: 100%;
     text-align: left;
     padding: 10px;
     background-color: var(--secondary-color);
     transform: scale(1, 0);
-    position: absolute;
+    transform-origin: top;
+    transition: transform 500ms ease-in-out;
+}
+
+.nav-link {
+    list-style: none;
+    margin-left: 1em;
+    margin-bottom: 4px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #000;
 }
