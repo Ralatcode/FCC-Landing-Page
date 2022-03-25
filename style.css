@@ -121,7 +121,7 @@ header {
 
     header {
         display: grid;
-        grid-template-columns: 0.75fr auto  minmax(385px, 3fr) 0.75fr;
+        grid-template-columns: 0.5fr auto  minmax(385px, 3fr) 0.5fr;
     }
 
     .logo {
@@ -173,5 +173,33 @@ header {
 }
 
 .hero {
-    margin-top: 5.5em;
+    margin-top: 5em;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter {
+    width: 30vw;
+    padding: 0.25em;
+    margin-top: 0.8em;
+    outline-color: var(--hover-color);
+}
+
+.newsletter::placeholder {
+    font-family: "Lato", sans-serif;
+}
+
+.form-button {
+    width: 15vw;
+    margin-top: 0.7em;
+    padding: 0.5em 0;
+    color: #000;
+    font-family: "Lato", sans-serif;
+    background-color: var(--secondary-color);
+    border: none;
 }
