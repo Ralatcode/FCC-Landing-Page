@@ -218,3 +218,38 @@ header {
     color: #cccbcb;
     transition: background-color 500ms ease-in-out;
 }
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-section {
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    color: darkorange;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-content {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.feature-content .description{
+    margin-top: 5px;
+}
